@@ -6,7 +6,7 @@ import numpy as np
 
 from scipy.stats import multivariate_normal
 
-def GMM(k: int, X: np.ndarray) -> float:
+def GMM(k: int, X: np.ndarray):
     size, dimension = X.shape
     normalize = lambda x: x / np.sum(x)
     calculate_cov = (lambda p, x, u:
